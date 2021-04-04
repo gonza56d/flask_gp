@@ -2,7 +2,7 @@
 from flask import Flask
 import flask_gp.views
 # Project
-from flask_gp.views.index import index_page
+from flask_gp.views import index_page
 
 
 app = Flask(__name__)
