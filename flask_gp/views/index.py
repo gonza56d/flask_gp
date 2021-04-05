@@ -14,6 +14,6 @@ index_page = Blueprint('index_page', __name__, template_folder='templates')
 def main_view():
     try:
         template_data = CalendarService().get_circuits()
-        return render_template('raceresults/main.html', **template_data)
+        return render_template('index/main.html', **template_data)
     except TemplateNotFound:
         abort(404)
