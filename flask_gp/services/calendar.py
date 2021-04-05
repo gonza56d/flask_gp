@@ -1,10 +1,9 @@
 # Python
-# import pdb
 import requests
 from lxml import html
 
 
-class RaceResults:
+class CalendarService:
     """Service class to get results from MotoGP.com"""
 
     MAIN_RACE_RESULTS_URL = 'https://www.motogp.com/en/calendar'
