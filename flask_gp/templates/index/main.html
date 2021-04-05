@@ -2,14 +2,16 @@
 
 {% block content %}
 
-<ul>
-    {% for item in results %}
-    <li>
-        <a href="{{ item.get('href').replace('https://www.motogp.com/en/', '') }}">
-            {{ item.text }}
-        </a>
-    </li>
-    {% endfor %}
-</ul>
+<div class="col-12 col-md-4">
+    {% include 'index/calendar.html' %}
+</div>
+
+<div class="col-12 col-md-4">
+    {% include 'index/circuit_results.html' %}
+</div>
+
+<div class="col-12 col-md-4">
+    {% include 'index/world_standings.html' %}
+</div>
 
 {% endblock %}

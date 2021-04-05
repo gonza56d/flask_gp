@@ -1,0 +1,9 @@
+<ul>
+    {% for item in results %}
+    <li>
+        <a href="{{ item.get('href').replace('https://www.motogp.com/en/', '') }}">
+            {{ item.text }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
